@@ -5,7 +5,7 @@ http://www.52nlp.cn/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%BB%E6%9C%BA%E7%8E
 https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45  #這個不錯, 務必參考!!
 
 - 重灌ubuntu 16.04之後
-
+'''
     # comfirm GPU exist
     lspci -nnk |grep -i nvidia
     
@@ -20,7 +20,7 @@ https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45  #這個不錯
     #sudo apt-get install mesa-common-dev
     
     #sudo apt-get install freeglut3-dev
-
+'''
 - download cuda
   下載cuda 8.0: https://developer.nvidia.com/cuda-80-ga2-download-archive  runfile檔
   將terminal 路徑指到runfile檔的資料夾
