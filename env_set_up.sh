@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# sudo cp -P cuda/include/cudnn.h /usr/local
+# sudo cp -P  env_set_up.sh  /usr/local/bin
 
 sudo apt-get update
 sudo apt purge nvidia-*
