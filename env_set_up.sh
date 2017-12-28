@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sudo cp -P cuda/include/cudnn.h /usr/local
+
 sudo apt-get update
 sudo apt purge nvidia-*
 sudo apt install nvidia-375
