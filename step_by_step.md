@@ -17,9 +17,7 @@ sudo apt purge nvidia-*
 sudo apt-get install nvidia-375
 
 #sudo add-apt-repository ppa:graphics-drivers/ppa
-
 #sudo apt-get install mesa-common-dev
-
 #sudo apt-get install freeglut3-dev
 ```
 
@@ -33,7 +31,7 @@ sudo apt-get install nvidia-375
 sudo sh cuda_8.0.61_375.26_linux.run
 ```
 
-​	Follow the command-line prompts
+- Follow the command-line prompts
 
 > Do you accept the previously read EULA?
 > accept/decline/quit: accept
@@ -103,6 +101,8 @@ sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 sudo ldconfig
+echo $PATH
+echo $LD_LIBRARY_PATH
 ```
 
 - tensorflow
