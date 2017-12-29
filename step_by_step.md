@@ -99,7 +99,7 @@ sudo chmod a+r /usr/local/cuda-8.0/lib64/libcudnn*
 
 #声明环境变量，并将其写入到 ~/.bashrc 的尾部:
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 sudo ldconfig
 echo $PATH
 echo $LD_LIBRARY_PATH
