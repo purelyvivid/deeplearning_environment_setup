@@ -20,6 +20,7 @@ sudo apt install nvidia-375
 #sudo apt-get -y install cuda
 sudo apt-get install cuda-8-0
 # After reboot, use 'nvidia-smi' to check whether cuda is installed sucessfully
+# check /usr/local/ has /cuda-8.0 floder
 
 # install cuDNN v6.0
 CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
