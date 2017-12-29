@@ -1,9 +1,13 @@
 #!/bin/bash
 
+# below will move this file to correct floder, see run_this.sh
 # sudo cp -P  env_set_up.sh  /usr/local/bin
 # cd /usr/local/bin
 # sh env_set_up.sh
 
+# install nvidia driver
+# not sure it's really useful, but still do it. 
+# Basiclly, driver will be replaced by newer version after installing cuda.  
 sudo apt-get update
 #sudo apt purge nvidia-*
 sudo apt install nvidia-375
