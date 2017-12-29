@@ -19,12 +19,19 @@ sudo pip install --user jupyter #successful
 #sudo pip install unroll   # has error!!
 #sudo easy_install -U setuptools
 
-#---other toolkit: keras, sklearn---
+#---keras---
 sudo pip install keras    #successful
+
+#---sklearn---
 sudo pip install sklearn  #successful
+
+#---pandas---
+sudo pip install pandas  #successful
+
+#---matplotlib---
+python -mpip install -U pip #successful
+sudo python -mpip install -U matplotlib  #successful
 
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
-
-
