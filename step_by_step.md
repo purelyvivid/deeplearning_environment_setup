@@ -2,7 +2,7 @@
 
 http://www.52nlp.cn/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%BB%E6%9C%BA%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-ubuntu-16-04-nvidia-gtx-1080-cuda-8
 
-https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45  #這個不錯, 務必參考!!
+https://gist.github.com/mjdietzx/0ff77af5ae60622ce6ed8c4d9b419f45  
 
 - 重灌ubuntu 16.04之後
 
