@@ -1,3 +1,7 @@
+
+when you see below msg
+means that your LD_LIBRARY_PATH is wrong
+__________________________________________________
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/home/phoebehuang/.local/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
