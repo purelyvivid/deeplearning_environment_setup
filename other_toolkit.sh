@@ -35,3 +35,20 @@ sudo python -mpip install -U matplotlib  #successful
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
+
+#---typora---
+# optional, but recommended
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+# add Typora's repository
+sudo add-apt-repository 'deb https://typora.io ./linux/'
+sudo apt-get update
+# install typora
+sudo apt-get install typora
+
+#--spyder----
+sudo pip install spyder
+
+#---VS Code---
+
+
+
