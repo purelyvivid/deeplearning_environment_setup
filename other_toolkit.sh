@@ -21,6 +21,7 @@ sudo pip install --user jupyter #successful
 
 #---keras---
 sudo pip install keras    #successful
+sudo pip install h5py  #successful
 
 #---sklearn---
 sudo pip install sklearn  #successful
@@ -68,37 +69,40 @@ sudo apt update
 sudo apt install git #success
 
 #---typora---
-# optional, but recommended
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
-# add Typora's repository
-sudo add-apt-repository 'deb https://typora.io ./linux/'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE # optional, but recommended
+sudo add-apt-repository 'deb https://typora.io ./linux/' # add Typora's repository
 sudo apt-get update
-# install typora
 sudo apt-get install typora
 
 #--spyder----
-sudo pip install spyder
+sudo pip install spyder #fail
 #   Could not find a version that satisfies the requirement pyqt5 (from spyder) (from versions: )
 # No matching distribution found for pyqt5 (from spyder)
-sudo -H  pip install pyqt5
+sudo -H  pip install pyqt5 #fail
 #  Could not find a version that satisfies the requirement pyqt5 (from versions: )
 #No matching distribution found for pyqt5
 #You are using pip version 8.1.1, however version 9.0.1 is available.
 #You should consider upgrading via the 'pip install --upgrade pip' command.
-pip install --upgrade pip
+pip install --upgrade pip #fail
 #Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages
 
 #---VS Code---
 #https://oranwind.org/vs-code-ubuntu-16/
+'''
 cd <VS Code 安裝檔所在目錄>
 sudo dpkg -i <VS Code 安裝檔>.deb
-sudo "python" -m pip install -U pylint
+sudo "python" -m pip install -U pylint #success
+'''
 
 #---opencv2---
-#https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30
+#https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #success
+
+#---chinese---
+sudo apt-get install hime #success
 
 #---other---
-#sudo apt install yum #has been uninstall
-sudo pip install imgaug
+#sudo apt install yum   # has been uninstall
+sudo pip install imgaug #success
+
 
 
