@@ -35,7 +35,7 @@ sudo python -mpip install -U matplotlib  #successful
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
-sudo apt-get install git-all
+sudo apt-get install git-all #fail
 """
 設定 runit (2.1.2-3ubuntu1) ...
 start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: 連線被拒絕
@@ -65,7 +65,7 @@ sudo apt-get purge git-all
 sudo apt-get purge git
 sudo apt-get autoremove
 sudo apt update
-sudo apt install git 
+sudo apt install git #success
 
 #---typora---
 # optional, but recommended
@@ -98,7 +98,7 @@ sudo "python" -m pip install -U pylint
 #https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30
 
 #---other---
-sudo apt install yum
+#sudo apt install yum #has been uninstall
 sudo pip install imgaug
 
 
