@@ -58,6 +58,9 @@ pip install --upgrade pip
 #Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages
 
 #---VS Code---
-
+#https://oranwind.org/vs-code-ubuntu-16/
+cd <VS Code 安裝檔所在目錄>
+sudo dpkg -i <VS Code 安裝檔>.deb
+sudo "python" -m pip install -U pylint
 
 
