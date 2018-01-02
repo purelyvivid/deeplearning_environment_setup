@@ -47,6 +47,15 @@ sudo apt-get install typora
 
 #--spyder----
 sudo pip install spyder
+#   Could not find a version that satisfies the requirement pyqt5 (from spyder) (from versions: )
+# No matching distribution found for pyqt5 (from spyder)
+sudo -H  pip install pyqt5
+#  Could not find a version that satisfies the requirement pyqt5 (from versions: )
+#No matching distribution found for pyqt5
+#You are using pip version 8.1.1, however version 9.0.1 is available.
+#You should consider upgrading via the 'pip install --upgrade pip' command.
+pip install --upgrade pip
+#Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages
 
 #---VS Code---
 
