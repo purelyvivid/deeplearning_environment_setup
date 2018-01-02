@@ -60,7 +60,12 @@ Processing triggers for ufw (0.35-0ubuntu2) ...
  git-daemon-run
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 """
-
+sudo apt-get purge runit
+sudo apt-get purge git-all
+sudo apt-get purge git
+sudo apt-get autoremove
+sudo apt update
+sudo apt install git 
 
 #---typora---
 # optional, but recommended
