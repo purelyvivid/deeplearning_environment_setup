@@ -36,31 +36,7 @@ sudo python -mpip install -U matplotlib  #successful
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
-sudo apt-get install git-all #fail
-"""
-設定 runit (2.1.2-3ubuntu1) ...
-start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: 連線被拒絕
-dpkg: error processing package runit (--configure):
- 子程序 已安裝的 post-installation script 傳回了錯誤退出狀態 1
-dpkg: 因相依問題，無法設定 git-daemon-run：
- git-daemon-run 相依於 runit﹔然而：
-  runit 套件尚未設定。
-
-dpkg: error processing package git-daemon-run (--configure):
- 相依問題 - 保留未設定
-設定 libcommon-sense-perl (3.74-1build1) ...
-No apport report written because the error message indicates its a followup error from a previous failure.
-
-設定 tla-doc (1.3.5+dfsg1-2) ...
-Processing triggers for libc-bin (2.23-0ubuntu9) ...
-Processing triggers for systemd (229-4ubuntu19) ...
-Processing triggers for ureadahead (0.100.0-19) ...
-Processing triggers for ufw (0.35-0ubuntu2) ...
-處理時發生錯誤：
- runit
- git-daemon-run
-E: Sub-process /usr/bin/dpkg returned an error code (1)
-"""
+sudo apt-get install git-all #runit fail
 sudo apt-get purge runit
 sudo apt-get purge git-all
 sudo apt-get purge git
@@ -99,6 +75,13 @@ sudo "python" -m pip install -U pylint #success
 
 #---chinese---
 sudo apt-get install hime #success
+
+#---python3---
+sudo apt-get update
+sudo apt-get -y upgrade
+#python3 -V
+sudo apt-get install -y python3-pip
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
 #---other---
 #sudo apt install yum   # has been uninstall
