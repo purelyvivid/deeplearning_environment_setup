@@ -11,8 +11,7 @@ sudo apt-get -y install ipython ipython-notebook #successful
 # install Jupyter Notebook
 sudo pip install --user jupyter #successful
 
-# below will has some issue: Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-NG6zOV/unroll/
-#sudo -H pip install jupyter  # has error!!
+sudo -H pip install jupyter   #successful
 # below are not nessesary!!
 #sudo pip install --upgrade setuptools
 #sudo pip install ez_setup
