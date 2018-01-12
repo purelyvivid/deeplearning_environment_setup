@@ -35,11 +35,11 @@ sudo python -mpip install -U matplotlib  #successful
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
-sudo apt-get install git-all #runit fail
-sudo apt-get purge runit
-sudo apt-get purge git-all
-sudo apt-get purge git
-sudo apt-get autoremove
+#sudo apt-get install git-all #runit fail
+#sudo apt-get purge runit
+#sudo apt-get purge git-all
+#sudo apt-get purge git
+#sudo apt-get autoremove
 sudo apt update
 sudo apt install git #success
 
