@@ -49,12 +49,11 @@ export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 # below will let my LD_LIBRARY_PATH = '/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:}', which is wrong, so I modify it
 #export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-sudo ldconfig
-
 # $ echo $LD_LIBRARY_PATH
 # /usr/local/cuda-8.0/lib64
 
 export CUDA_VISIBLE_DEVICES=0
+sudo ldconfig
 
 # install tensorflow
 sudo apt-get -y update
