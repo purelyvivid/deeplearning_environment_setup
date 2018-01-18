@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+#---upgrade pip---
 sudo pip install --upgrade pip
 
 
@@ -50,7 +50,6 @@ sudo apt-get update
 sudo apt-get install typora
 
 #--spyder----
-sudo pip install spyder  #success
 #sudo pip install spyder #fail
 #   Could not find a version that satisfies the requirement pyqt5 (from spyder) (from versions: )
 # No matching distribution found for pyqt5 (from spyder)
@@ -64,14 +63,17 @@ sudo pip install spyder  #success
 
 #---VS Code---
 #https://oranwind.org/vs-code-ubuntu-16/
-'''
-cd <VS Code 安裝檔所在目錄>
-sudo dpkg -i <VS Code 安裝檔>.deb
-sudo "python" -m pip install -U pylint #success
-'''
+#cd <where VS Code filename.deb is >
+#sudo dpkg -i <VS Code file name>.deb
+#sudo "python" -m pip install -U pylint #success
 
-#---npm---
-sudo apt install npm
+
+#---node.js---
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+# in a certain folder, run "npm install" for the first time
+# in that folder, run "npm run serve-watch" to show the webpage
 
 #---opencv2---
 #https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #success
@@ -80,15 +82,15 @@ sudo apt install npm
 sudo apt-get install hime #success
 
 #---python3---
-sudo apt-get update
-sudo apt-get -y upgrade
+#sudo apt-get update
+#sudo apt-get -y upgrade
 #python3 -V
-sudo apt-get install -y python3-pip
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+#sudo apt-get install -y python3-pip
+#sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
 #---other---
 #sudo apt install yum   # has been uninstall
-sudo pip install imgaug #success
+#sudo pip install imgaug #success
 
 
 
