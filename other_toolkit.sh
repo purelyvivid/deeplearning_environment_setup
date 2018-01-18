@@ -70,6 +70,9 @@ sudo dpkg -i <VS Code 安裝檔>.deb
 sudo "python" -m pip install -U pylint #success
 '''
 
+#---npm---
+sudo apt install npm
+
 #---opencv2---
 #https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #success
 
