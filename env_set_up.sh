@@ -10,7 +10,8 @@
 # Basiclly, driver will be replaced by newer version after installing cuda.  
 sudo apt-get update
 #sudo apt purge nvidia-*
-sudo apt install nvidia-375
+sudo apt install nvidia-384
+#sudo apt install nvidia-375
 
 # install CUDA Toolkit v8.0
 # instructions from https://developer.nvidia.com/cuda-downloads (linux -> x86_64 -> Ubuntu -> 16.04 -> deb (network))
