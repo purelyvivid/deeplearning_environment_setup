@@ -36,6 +36,10 @@ sudo pip install pandas  #successful
 python -mpip install -U pip #successful
 sudo python -mpip install -U matplotlib  #successful
 
+#---pytorch---
+sudo pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp27-cp27mu-linux_x86_64.whl 
+sudo pip install torchvision 
+
 #---git---
 #sudo pip install git #error! 
 # Could not find a version that satisfies the requirement git (from versions: ) No matching distribution found for git
