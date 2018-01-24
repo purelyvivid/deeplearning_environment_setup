@@ -12,6 +12,10 @@ sudo apt-get -y install ipython ipython-notebook #successful
 sudo pip install --user jupyter #successful
 
 sudo -H pip install jupyter   #successful
+
+# below 'phoebehuang' change to your own user name
+sudo chown phoebehuang:phoebehuang ~/.local/share/jupyter #successful
+
 # below are not nessesary!!
 #sudo pip install --upgrade setuptools
 #sudo pip install ez_setup
