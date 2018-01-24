@@ -83,6 +83,14 @@ sudo apt-get install npm
 # in a certain folder, run "npm install" for the first time
 # in that folder, run "npm run serve-watch" to show the webpage
 
+#---gym---
+git clone https://github.com/openai/gym.git
+cd gym
+sudo pip install -e .
+
+#---pillow---
+#sudo pip install Pillow #Requirement already satisfied
+
 #---opencv2---
 #https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #success
 
