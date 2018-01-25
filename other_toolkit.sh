@@ -87,6 +87,7 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 # in a certain folder, run "npm install" for the first time
 # in that folder, run "npm run serve-watch" to show the webpage
+sudo apt install nodejs-legacy
 
 #---gym---
 git clone https://github.com/openai/gym.git
