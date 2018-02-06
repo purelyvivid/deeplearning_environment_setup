@@ -60,8 +60,11 @@ sudo ldconfig
 sudo apt-get -y update
 sudo apt-get install python-dev python-pip
 sudo apt-get install libcupti-dev
-sudo pip install tensorflow-gpu  
-# default install tensorflow 1.4, which doesn't support cuda >= 9.0
+#sudo pip install tensorflow-gpu   # default install tensorflow 1.5, which doesn't support cuda < 9.0 , 2018/2/6
+TF_WHL_FILE="tensorflow_gpu-1.4.1-cp27-cp27mu-manylinux1_x86_64.whl"
+wget https://pypi.python.org/packages/cf/95/d7ba49e73125cf0f3f8d4dcbb05a5b3ebb25205b0af7ba844f1a1300f79a/${TF_WHL_FILE}
+sudo pip install ${TF_WHL_FILE}
+
 # use below command to check tensorflow is installed sucessfully 
 python -c 'import tensorflow as tf; print(tf.__version__)' 
 
