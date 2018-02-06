@@ -75,6 +75,9 @@ sudo apt-get install typora
 #sudo dpkg -i <VS Code file name>.deb
 #sudo "python" -m pip install -U pylint #success
 
+#---tk---
+sudo apt-get install python-tk
+
 #---npm---
 sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:gias-kay-lee/npm
