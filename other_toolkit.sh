@@ -113,6 +113,9 @@ sudo apt-get install hime #success
 #sudo apt-get install -y python3-pip
 #sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
+#---gensim---
+sodo easy_install -U gensim #success
+
 #---other---
 #sudo apt install yum   # has been uninstall
 #sudo pip install imgaug #success
