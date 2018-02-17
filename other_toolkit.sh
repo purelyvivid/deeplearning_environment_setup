@@ -116,6 +116,9 @@ sudo apt-get install hime #success
 #---gensim---
 sodo easy_install -U gensim #success
 
+#---beautifulsoup4---
+sodo easy_install beautifulsoup4 #success
+
 #---other---
 #sudo apt install yum   # has been uninstall
 #sudo pip install imgaug #success
