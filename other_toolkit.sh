@@ -114,10 +114,10 @@ sudo apt-get install hime #success
 #sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
 #---gensim---
-sodo easy_install -U gensim #success
+sudo easy_install -U gensim #success
 
 #---beautifulsoup4---
-sodo easy_install beautifulsoup4 #success
+sudo easy_install beautifulsoup4 #success
 
 #---other---
 #sudo apt install yum   # has been uninstall
