@@ -69,6 +69,13 @@ sudo apt-get install typora
 #pip install --upgrade pip #fail
 #Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages
 
+#---vim---
+sudo apt-get install vim
+# vi main.c
+# gcc main.c
+# ls
+# ./a.out
+
 #---VS Code---
 #https://oranwind.org/vs-code-ubuntu-16/
 #cd <where VS Code filename.deb is >
