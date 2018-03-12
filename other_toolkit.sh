@@ -1,26 +1,37 @@
 #!/bin/bash
 
+#---pip---
+#sudo apt-get install python-pip 
+
 #---upgrade pip---
 sudo pip install --upgrade pip
-
 
 #---Jupyter Notebook---
 # install Ipython:
 sudo apt-get -y install ipython ipython-notebook #successful
-
 # install Jupyter Notebook
 sudo pip install --user jupyter #successful
-
 sudo -H pip install jupyter   #successful
-
 # below 'phoebehuang' change to your own user name
 sudo chown phoebehuang:phoebehuang ~/.local/share/jupyter #successful
 
-# below are not nessesary!!
-#sudo pip install --upgrade setuptools
-#sudo pip install ez_setup
-#sudo pip install unroll   # has error!!
-#sudo easy_install -U setuptools
+#---Jupyter Lab---
+sudo pip install jupyterlab
+
+#---numpy---
+sudo pip install numpy 
+
+#---caffe--- (not sure)
+sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags Cython ipython
+#ref: http://caffe.berkeleyvision.org/install_apt.html
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install --no-install-recommends libboost-all-dev
+#ref: https://hk.saowen.com/a/09c7876e3d8b678e169086f7473d1df693488c394cc7afe4970c4c1be26e5d0d
+git clone https://github.com/BVLC/caffe && cd caffe
+cp Makefile.config.example Makefile.config 
+vim Makefile.config
+make all -j16
+make pycaffe
 
 #---keras---
 sudo pip install keras    #successful
