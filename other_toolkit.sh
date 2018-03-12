@@ -18,10 +18,22 @@ sudo chown phoebehuang:phoebehuang ~/.local/share/jupyter #successful
 #---Jupyter Lab---
 sudo pip install jupyterlab
 
+#---vim---
+sudo apt-get install vim
+# vi main.c
+# gcc main.c
+# ls
+# ./a.out
+
 #---numpy---
 sudo pip install numpy 
 
 #---caffe--- (not sure)
+#good ref: http://homeway.me/2018/01/25/setup-caffe-for-deep-learning/
+sudo apt-get install libgflags-dev -y
+sudo apt-get install libgoogle-glog-dev liblmdb-dev -y
+sudo pip install numpy
+sudo apt install liblmdb-dev -y
 sudo apt-get install python-numpy python-scipy python-matplotlib python-sklearn python-skimage python-h5py python-protobuf python-leveldb python-networkx python-nose python-pandas python-gflags Cython ipython
 #ref: http://caffe.berkeleyvision.org/install_apt.html
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
@@ -79,13 +91,6 @@ sudo apt-get install typora
 #You should consider upgrading via the 'pip install --upgrade pip' command.
 #pip install --upgrade pip #fail
 #Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages
-
-#---vim---
-sudo apt-get install vim
-# vi main.c
-# gcc main.c
-# ls
-# ./a.out
 
 #---VS Code---
 #https://oranwind.org/vs-code-ubuntu-16/
