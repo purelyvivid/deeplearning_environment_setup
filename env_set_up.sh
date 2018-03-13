@@ -13,19 +13,15 @@ sudo apt-get update
 sudo apt install nvidia-384
 #sudo apt install nvidia-375
 
-# install CUDA Toolkit v8.0
+# install CUDA v8.0
 # instructions from https://developer.nvidia.com/cuda-downloads (linux -> x86_64 -> Ubuntu -> 16.04 -> deb (network))
-# https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
-
-# below will install cuda 9.1 , don't know why... 
 CUDA_REPO_PKG="cuda-repo-ubuntu1604_8.0.61-1_amd64.deb"
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG}
 sudo dpkg -i ${CUDA_REPO_PKG}
 sudo apt-get update
-#sudo apt-get -y install cuda
+#sudo apt-get -y install cuda # if not append version, this command will install the newest cuda, which is not cuda-8-0 
+sudo apt-get install cuda-8-0 #below will install cuda 8.0
 
-#below will install cuda 8.0
-sudo apt-get install cuda-8-0
 # After reboot, use 'nvidia-smi' to check whether cuda is installed sucessfully
 # check /usr/local/ has /cuda-8.0 floder
 
