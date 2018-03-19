@@ -1,3 +1,9 @@
+"""
+Evironment:
+cuda 9.0 + cuDNN v7.0.4 + tensorflow 1.6.0 + python2.7 on Ubuntu 16.04
+"""
+
+
 # upgrade pip
 pip install --upgrade pip
 
