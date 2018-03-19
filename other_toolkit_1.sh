@@ -36,12 +36,25 @@ cd ~ && python -c 'from caffe2.python import core' 2>/dev/null && echo "Success"
 #  install Caffe #TBD
 # ref: http://caffe.berkeleyvision.org/install_apt.html
 # CUDA 8 is required on Ubuntu 16.04.
+"""
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev
 sudo apt-get install libatlas-base-dev #blas
 sudo apt-get install libopenblas-dev  #blas
 sudo apt-get install python-dev  
 sudo apt install caffe-cuda 
+"""
+
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt install caffe-cuda #fail
+
+"""
+Test:
+$ python
+>>> import caffe
+>>> import caffe2
+"""
 
 
 
