@@ -46,13 +46,13 @@ sudo apt-get install vim
 Useful python toolkit
 """
 #---numpy---
-sudo pip install numpy 
+sudo pip install numpy #successful #Requirement already satisfied
 
 #---pandas---
 sudo pip install pandas  #successful
 
 #---matplotlib---
-python -mpip install -U pip #successful
+sudo python -mpip install -U pip #successful
 sudo python -mpip install -U matplotlib  #successful
 
 #---sklearn---
@@ -86,7 +86,7 @@ sudo apt-get install npm
 #---node.js---
 sudo apt-get update
 sudo apt-get install nodejs
-sudo apt-get install npm
+#sudo apt-get install npm
 # in a certain folder, run "npm install" for the first time
 # in that folder, run "npm run serve-watch" to show the webpage
 sudo apt install nodejs-legacy
@@ -125,10 +125,10 @@ other IDE
 Image Processing
 """
 #---pillow---
-#sudo pip install Pillow #Requirement already satisfied
+sudo pip install Pillow  #successful #Requirement already satisfied
 
-#---opencv2---
-#https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #success
+#---opencv2--- (not sure)
+#ref: https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #fail
 
 """
 RL
@@ -153,6 +153,11 @@ sudo easy_install beautifulsoup4 #success
 """
 language of system setting
 """
+#---新酷音---
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+sudo apt-get install fcitx-chewing
+
 #---chinese---
 sudo apt-get install hime #success
 
