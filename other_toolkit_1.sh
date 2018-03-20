@@ -39,6 +39,7 @@ cmake ..
 sudo make install
 cd ~ && python -c 'from caffe2.python import core' 2>/dev/null && echo "Success" || echo "Failure" #Test the Caffe2 Installation
 
+
 #  install Caffe #TBD
 # ref: http://caffe.berkeleyvision.org/install_apt.html
 # CUDA 8 is required on Ubuntu 16.04.
@@ -62,6 +63,10 @@ $ python
 >>> import caffe2
 """
 
+#  install onnx
+sudo apt-get install protobuf-compiler libprotoc-dev
+sudo pip install onnx
+python -c "import onnx"
 
 
 
