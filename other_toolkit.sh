@@ -59,17 +59,31 @@ sudo python -mpip install -U matplotlib  #successful
 sudo pip install sklearn  #successful
 
 """
-Other Deep Learning Framework
+Deep Learning Framework
   For caffe and caffe2, see: other_toolkit_1.sh
   For tensorflow, see: env_set_up_cuda-9-0.sh or env_set_up_cuda.sh
 """
 #---keras---
 sudo pip install keras    #successful
-sudo pip install h5py  #successful
+sudo pip install h5py     #successful
 
 #---pytorch---
 sudo pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp27-cp27mu-linux_x86_64.whl 
 sudo pip install torchvision 
+
+"""
+Deep Learning Framework Converter
+  For caffe and caffe2, see: other_toolkit_1.sh
+  For tensorflow, see: env_set_up_cuda-9-0.sh or env_set_up_cuda.sh
+"""
+
+#---onnx---
+sudo apt-get install protobuf-compiler libprotoc-dev
+sudo pip install onnx
+python -c "import onnx"
+# ---onnx-tf---
+# ref: < https://github.com/onnx/tutorials/blob/master/tutorials/OnnxTensorflowImport.ipynb >  #fail
+sudo pip install onnx-tf
 
 """
 GUI tool
@@ -127,8 +141,8 @@ Image Processing
 #---pillow---
 sudo pip install Pillow  #successful #Requirement already satisfied
 
-#---opencv2--- (not sure)
-#ref: https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 #fail
+#---opencv2--- 
+# ref: < http://leoybkim.com/wiki/installing-opencv-2.4.13-on-ubunto-16.04/ > ... FAIL
 
 """
 RL
