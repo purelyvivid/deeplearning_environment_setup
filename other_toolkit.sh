@@ -171,6 +171,7 @@ language of system setting
 sudo add-apt-repository ppa:fcitx-team/nightly
 sudo apt-get update
 sudo apt-get install fcitx-chewing
+# Text Entry Settings -> Add 'chewing(fcitx)' -> log out -> log in'
 
 #---chinese---
 sudo apt-get install hime #success
