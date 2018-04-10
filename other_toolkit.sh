@@ -81,9 +81,11 @@ Deep Learning Framework Converter
 sudo apt-get install protobuf-compiler libprotoc-dev
 sudo pip install onnx
 python -c "import onnx"
-# ---onnx-tf---
+#---onnx-tf---
 # ref: < https://github.com/onnx/tutorials/blob/master/tutorials/OnnxTensorflowImport.ipynb >  #fail
 sudo pip install onnx-tf
+#---pydot and graphviz---
+sudo apt install python-pydot python-pydot-ng graphviz # python-pydot-ng isn't in the 14.04 repos
 
 """
 GUI tool
