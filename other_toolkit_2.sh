@@ -40,8 +40,10 @@ nodejs
 """
 # method 0 (success)
 sudo npm install n -g
-sudo n stable
+#sudo n stable
 #  installed : v10.0.0
+sudo n 8.9.0
+#  installed : v8.9.0
 
 # method 1 (fail)
 # https://nodesource.com/blog/installing-node-js-8-tutorial-linux-via-package-manager/
