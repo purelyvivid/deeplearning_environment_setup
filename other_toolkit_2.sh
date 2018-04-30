@@ -3,10 +3,15 @@ Evironment:
 cuda 9.0 + cuDNN v7.0.4 + tensorflow 1.6.0 + python2.7 on Ubuntu 16.04
 """
 
+"""
+for Tensorflow.js
+"""
+
+"""
+yarn
+"""
 # curl
 sudo apt install curl
-
-# yarn
 # https://yarnpkg.com/en/docs/install#debian-stable
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -21,7 +26,30 @@ sudo apt-get install --no-install-recommends yarn
 yarn --version
 # 1.6.0
 
-# nodejs
+"""
+Install the Node.js version manager
+"""
+sudo apt-get update
+sudo apt-get install build-essential libssl-dev
+curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+source ~/.profile
+nvm --version
+
+"""
+nodejs
+"""
+# method 0 (success)
+sudo npm install n -g
+sudo n stable
+#  installed : v10.0.0
+
+# method 1 (fail)
+# https://nodesource.com/blog/installing-node-js-8-tutorial-linux-via-package-manager/
+# Install Node.js 8 on Ubuntu
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# method 2 (can not start automatically)
 # https://blog.gtwang.org/web-development/install-node-js-in-windows-mac-os-x-linux/
 # 在 Linux 下安裝 Node.js - 下載 Node.js 二進位檔安裝
 # download binary file from offical website: https://nodejs.org/en/download/
