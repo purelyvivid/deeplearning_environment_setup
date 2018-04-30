@@ -66,7 +66,13 @@ export PATH=$PATH:/opt/${fname}
 # 如果要讓每次登入都會自動設定 PATH，可以把上面這行加在自己的 ~/.bashrc 中：
 echo 'PATH=$PATH:/opt/node-v8.11.1-linux-x64' >> ~/.bashrc
 
-
+"""
+parcel
+"""
+# see: https://parceljs.org/getting_started.html
+yarn global add parcel-bundler
+# 在你正在使用的项目目录下创建一个 package.json 文件：
+yarn init -y
 
 
 
