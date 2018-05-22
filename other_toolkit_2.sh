@@ -5,10 +5,7 @@ cuda 9.0 + cuDNN v7.0.4 + tensorflow 1.6.0 + python2.7 on Ubuntu 16.04
 
 """
 for Tensorflow.js
-"""
-
-"""
-yarn
+install curl && Node.js>=8.9 && yarn
 """
 # curl
 sudo apt install curl
@@ -16,18 +13,19 @@ sudo apt install curl
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - #version 8.11.x
 sudo apt-get install -y nodejs
 # install
-# sudo apt-get update && sudo apt-get install yarn
+sudo apt-get update && sudo apt-get install yarn
 #If using nvm you can avoid the node installation by doing:
-sudo apt-get install --no-install-recommends yarn
+#sudo apt-get install --no-install-recommends yarn
 # test
 yarn --version
 # 1.6.0
 
+#---------<If only use Tensorflow.js, below can be ignored>-------------------------------------------------
 """
-Install the Node.js version manager
+Install the nvm (Node.js version manager)
 """
 sudo apt-get update
 sudo apt-get install build-essential libssl-dev
@@ -36,7 +34,7 @@ source ~/.profile
 nvm --version
 
 """
-nodejs
+use npm install nodejs
 """
 # method 0 (success)
 sudo npm install n -g
@@ -45,13 +43,9 @@ sudo npm install n -g
 sudo n 8.9.0
 #  installed : v8.9.0
 
-# method 1 (fail)
-# https://nodesource.com/blog/installing-node-js-8-tutorial-linux-via-package-manager/
-# Install Node.js 8 on Ubuntu
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-# method 2 (can not start automatically)
+"""
+download and install nodejs
+"""
 # https://blog.gtwang.org/web-development/install-node-js-in-windows-mac-os-x-linux/
 # 在 Linux 下安裝 Node.js - 下載 Node.js 二進位檔安裝
 # download binary file from offical website: https://nodejs.org/en/download/
@@ -67,14 +61,10 @@ export PATH=$PATH:/opt/${fname}
 echo 'PATH=$PATH:/opt/node-v8.11.1-linux-x64' >> ~/.bashrc
 
 """
-parcel
+use yarn install parcel
 """
 # see: https://parceljs.org/getting_started.html
 yarn global add parcel-bundler
 # 在你正在使用的项目目录下创建一个 package.json 文件：
 yarn init -y
-
-
-
-
 
