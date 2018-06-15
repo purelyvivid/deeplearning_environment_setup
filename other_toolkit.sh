@@ -68,7 +68,10 @@ sudo pip install keras    #successful
 sudo pip install h5py     #successful
 
 #---pytorch---
+# v0.3.0 post4
 sudo pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp27-cp27mu-linux_x86_64.whl 
+# v0.4.0
+#sudo pip install https://files.pythonhosted.org/packages/df/a4/7f5ec6e9df1bf13f1881353702aa9713fcd997481b26018f35e0be85faf7/torch-0.4.0-cp27-cp27mu-manylinux1_x86_64.whl
 sudo pip install torchvision 
 
 """
@@ -80,10 +83,14 @@ Deep Learning Framework Converter
 #---onnx---
 sudo apt-get install protobuf-compiler libprotoc-dev
 sudo pip install onnx
+#sudo pip install onnx==1.2
+#sudo pip install onnx==1.0.1
 python -c "import onnx"
+
 #---onnx-tf---
 # ref: < https://github.com/onnx/tutorials/blob/master/tutorials/OnnxTensorflowImport.ipynb >  #fail
-sudo pip install onnx-tf
+sudo pip install onnx-tf #version 1.1.2
+
 #---pydot and graphviz---
 sudo apt install python-pydot python-pydot-ng graphviz # python-pydot-ng isn't in the 14.04 repos
 
