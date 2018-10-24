@@ -8,12 +8,12 @@
 - run `sh run_this.sh`
 
 or,
-- see `env_set_up.sh`, run in **terminal** line by line
+- see `env_set_up_cuda-8-0_py2.sh`, run in **terminal** line by line
 
 
 ### cuda 9.0 + cuDNN v7.0.4 + tensorflow 1.6.0 + python2.7 on Ubuntu 16.04 
 
-- see `env_set_up_cuda-9-0.sh`, run in **terminal** line by line
+- see `env_set_up_cuda-9-0_py2.sh`, run in **terminal** line by line
 
 ### cuda 9.0 + cuDNN v7.0.4 + tensorflow 1.11.0 + python3.5 on Ubuntu 16.04 
 
