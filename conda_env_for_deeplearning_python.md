@@ -7,7 +7,7 @@
 安裝過程中，當詢問是否要將conda root設為terminal時：  
 - 安裝時若依照預設的答案選`no`，安裝之後
   - 每次開啟terminal都要運行一行指令`export PATH=~/anaconda3/bin:$PATH`，如此conda指令才會有作用。
-  - 如果想要永久讓conda指令有效，可以用指令`gedit ~/.profile`進到`~/.profile`文件裡，在文件最後手動加上該行指令`export PATH=~/anaconda3/bin:$PATH`儲存並關閉。
+  - 如果想要永久讓conda指令有效，可以用指令`gedit ~/.profile`進到`~/.profile`文件裡，在文件最後手動加上該行指令`export PATH=~/anaconda3/bin:$PATH`儲存並關閉，登出並登入後，在terminal裡執行`conda init`。
 
 - 安裝時假如不依照預設的答案，輸入`yes`，開啟terminal就直接預設進入conda base。
 
@@ -25,7 +25,7 @@ conda install -c conda-forge jupyterlab
 conda deactivate
 ```
 
-##建立一個python Tensorflow的conda環境
+## 建立一個python Tensorflow的conda環境
 
 上述ml_base環境必須先建製完成
 
