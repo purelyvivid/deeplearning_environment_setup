@@ -22,7 +22,7 @@ conda install -c conda-forge matplotlib
 conda install -c anaconda git
 conda install -c anaconda ipykernel
 conda install -c conda-forge jupyterlab
-conda deactivate
+#conda deactivate
 ```
 
 ## 建立一個python Tensorflow的conda環境
@@ -34,7 +34,7 @@ conda create --name tensorflow --clone ml_base
 conda activate tensorflow
 conda install -c anaconda tensorflow-gpu
 python -m ipykernel install --user --name tensorflow --display-name "Python (tensorflow)"
-conda deactivate
+#conda deactivate
 ```
 
 ## 建立一個python Keras (基於Tensorflow)的conda環境
@@ -46,7 +46,7 @@ conda create -n keras --clone tensorflow
 conda activate keras
 conda install -c conda-forge keras
 python -m ipykernel install --user --name keras --display-name "Python (keras)" 
-conda deactivate
+#conda deactivate
 ```
 
 ## 建立一個python PyTorch的conda環境
@@ -58,7 +58,7 @@ conda create -n pytorch --clone ml_base
 conda activate pytorch
 conda install -c pytorch pytorch 
 python -m ipykernel install --user --name pytorch --display-name "Python (pytorch)"
-conda deactivate
+#conda deactivate
 ```
 
 ## jupyter kernel的管理
